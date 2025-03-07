@@ -458,8 +458,8 @@ function DashboardRow2() {
         // referrer: "0x8a62CcdFFb086c190A869E49761E6F9E422214E7"
       },
     });
-    console.log(res?.data, "direct");
-    setDirect(res?.data);
+    console.log(res?.data?.data, "direct");
+    setDirect(res?.data?.data);
   };
   useEffect(() => {
     if (address) getDirect();
